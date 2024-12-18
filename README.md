@@ -1,13 +1,53 @@
-# React + TypeScript + Vite
+# NameWhizz
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![NameWhizz Logo](./src/assets/light_logo.png)
 
-Currently, two official plugins are available:
+NameWhizz is a random name picker tool with various functions & customization. Just enter inputs, choose the random picker type and get your random result.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- In some situations, our brain just can't make a decision, so why not let the tool like NameWhizz to making the small decision.
 
-## Expanding the ESLint configuration
+- By just inserting your inputs and spin the list, you will immediately get a random result.
+
+- NameWhizz will give you the fairest result by using the advanced algorithm behind it.
+
+## Tech Stack
+
+- React (18)
+- Sass
+- CSS Modules
+- Node (20.18.0)
+- pnpm (9.15.0)
+- Vite
+
+## Getting Started
+
+After confirming that your development environment meets the specified [requirements](#requirements), you can start this project based by doing the following:
+
+1. Clone the project
+
+```bash
+git clone git@github.com:IamAravindKumar/NameWhizz.git
+```
+
+2. Move into the Folder
+
+```bash
+cd NameWhizz
+```
+
+3. Install Dependencies
+
+```bash
+pnpm install
+```
+
+4. Start the Dev Server
+
+```bash
+pnpm dev
+```
+
+## Tips for Expanding the ESLint configuration[Keeping for contributors future reference]
 
 If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
