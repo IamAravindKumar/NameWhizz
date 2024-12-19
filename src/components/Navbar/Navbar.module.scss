@@ -1,0 +1,22 @@
+.navbar {
+  grid-area: navbar;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: $black;
+  box-shadow: 0 2px 4px rgba(58, 63, 71, 0.5);
+  border-bottom: 1px solid $light_grey;
+  z-index: 1;
+
+  .logo img {
+    height: 68px;
+    vertical-align: middle;
+  }
+
+  .hamburger {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: $white;
+  }
+}

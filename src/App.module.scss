@@ -1,6 +1,17 @@
-.readDocs {
-color: $primary;
-font-weight: 500;
-}
+.container {
+  display: grid;
+  grid-template-areas:
+    "navbar navbar"
+    "main sidenav"
+    "footer footer";
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr 0;
+  height: 100%;
+  width: 100%;
+  transition: grid-template-columns 0.3s ease;
 
+  &.sidenavOpen {
+    grid-template-columns: 1fr 30%;
+  }
+}
 

@@ -1,17 +1,25 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-import styles from './App.module.scss'
+import { useState } from 'react'
+import Navbar from "./components/Navbar";
+import Workarea from './components/Workarea';
+import Configpane from './components/Configpane';
+import Footer from './components/Footer';
+import styles from "./App.module.scss";
 
 function App() {
+  const [isSidenavOpen, setIsSidenavOpen] = useState(false);
+
+  const toggleSidenav = () => {
+    setIsSidenavOpen(!isSidenavOpen);
+  };
 
   return (
-    <>
-      <p className={styles.readDocs}>
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className={`${styles.container} ${isSidenavOpen ? styles.sidenavOpen : ''}`}>
+      <Navbar toggleSidenav={toggleSidenav} />
+      <Workarea />
+      <Configpane isSidenavOpen={isSidenavOpen} />
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
