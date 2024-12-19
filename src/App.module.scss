@@ -4,7 +4,7 @@
     "navbar navbar"
     "main sidenav"
     "footer footer";
-  grid-template-rows: auto 1fr;
+  grid-template-rows: auto 1fr auto;
   grid-template-columns: 1fr 0;
   height: 100%;
   width: 100%;
@@ -12,6 +12,23 @@
 
   &.sidenavOpen {
     grid-template-columns: 1fr 30%;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-areas:
+    "navbar"
+    "main"
+    "footer";
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    &.sidenavOpen {
+      grid-template-areas:
+      "navbar"
+      "sidenav"
+      "footer";
+      grid-template-rows: auto 1fr auto;
+      grid-template-columns: 1fr;
+    }
   }
 }
 

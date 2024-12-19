@@ -1,4 +1,14 @@
 .main {
-    grid-area: main;
-    padding: 1rem;
+  grid-area: main;
+  padding: 1rem;
+  transition: opacity 0.3s ease;
+
+  @media (max-width: 768px) {
+    opacity: 1;
+    display: block;
+    &.sidenavOpen {
+      opacity: 0;
+      display: none;
+    }
   }
+}

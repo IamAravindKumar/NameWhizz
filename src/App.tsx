@@ -15,7 +15,7 @@ function App() {
   return (
     <div className={`${styles.container} ${isSidenavOpen ? styles.sidenavOpen : ''}`}>
       <Navbar toggleSidenav={toggleSidenav} />
-      <Workarea />
+      <Workarea isSidenavOpen={isSidenavOpen}/>
       <Configpane isSidenavOpen={isSidenavOpen} />
       <Footer />
     </div>
