@@ -8,7 +8,6 @@
   grid-template-columns: 1fr 0;
   height: 100%;
   width: 100%;
-  transition: grid-template-columns 0.3s ease;
 
   &.sidenavOpen {
     grid-template-columns: 1fr 30%;

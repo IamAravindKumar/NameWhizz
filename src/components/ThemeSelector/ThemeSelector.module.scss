@@ -1,0 +1,25 @@
+.themeToggle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.6rem;
+
+  .colorLabel {
+    padding: 1.2rem;
+    color:var(--secondary-color);
+    border-radius: 8px;
+    border: 8px solid var(--border-color);
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+    position: relative;
+  }
+
+  .icon {
+    font-size: 1.5rem;
+    position: absolute;
+    color:var(--secondary-color);
+    top: -0.5rem;
+    left: 0.5rem;
+  }
+}
